@@ -1,0 +1,26 @@
+{
+  "name": "@coopdigital/foundations-normalize",
+  "version": "1.0.0",
+  "description": "Co-op Foundations: Normalize",
+  "style": "src/normalize.css",
+  "author": "Matthew Morek (matthew.morek@coopdigital.co.uk)",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "node_modules/.bin/stylelint 'src/*.css'",
+    "comb": "node_modules/.bin/csscomb src/*.css",
+    "test": "npm run comb && npm run lint",
+    "init": "rm -rf ./.git && git init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coopdigital/foundations-normalize.git"
+  },
+  "devDependencies": {
+    "csscomb": "^4.2.0",
+    "stylelint": "^9.7.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
