@@ -1,56 +1,27 @@
-# Component/Module Template
-This repository serves as a template for creating new components and modules for Co-op Frontend Toolkit.
+# Co-op Foundations: Global
+Styles available in the global scope of projects.
 
-## Create a component/module
-The steps below will help you set up a new project and kickstart building a new component or module.
+## How to use
+1. Install via `npm` or Yarn:
+  ```bash
+  $ npm install @coopdigital/foundations-global --save
+  $ yarn add @coopdigital/foundations-global
+  ```
+2. Add CSS module to your application via a most appropriate method. This will entirely depend on your application and how you are currently loading CSS modules within it.
 
-### 1. Pick a name for your project
-Use the following naming convention:
-```
-@coopdigital/component-{name}
-@coopdigital/module-{name}
-```
-Example:
-```
-@coopdigital/component-button
-@coopdigital/module-typography
-```
+## Examples
+Here's a bunch of examples, showing how you can integrate this CSS module in your project, based on most popular types of project.
 
-### 2. Clone this repository to your prefered location:  
-```bash
-$ git clone https://github.com/coopdigital/component-template.git ./@coopdigital/module-typography
-```
-
-### 3. Prepare a new repository
-1. Re-initialise this as a fresh Git repository with `npm run init`.
-2. Add your chosen project name to `package.json` along with the `@coopdigital` namespace.
-3. Install build tools via `npm install`.
-4. Start coding!
-
-## Commands
-This package has some useful built-in commands to help you with development:
-```bash
-$ npm run comb      # runs CSSComb to make your CSS look and read beautifully
-$ npm run line      # runs StyleLint against your CSS using `standard` config
-$ npm run test      # runs both `comb` and `lint` sequentially to help you test your CSS
-```
-
-## Developing Components
-All components are name spaced with:
+### Vue.js
+In Vue, you can just reference it from a global component like so:
 ```css
-.coop-c-[name]
+<style>
+@import "~@coopdigital/foundations-global/src/global.css";
+</style>
 ```
 
-We build our components based on the [BEM style](http://getbem.com/). This combination of name spacing and BEM allows us to build flexible components that can be shared across the Co-op easily - avoiding clashing styles or the need to create complex overrides when developing services.
+### React.js
+TBD
 
-If you are building a component for the design system you would name space your component with `coop-c-[name]`.
-
-When developing components for specific services choose a sensible namespace for your service. For example Funeral Care components would be named `fc-c-`.
-
-## Extending Components
-If you use a global component but want to change it's styling, use extra classes to extend it. For example if you wanted to centre align the text in card, you would add a modifier class (as per BEM) to change the alignment.  Note that the override class uses the name space from the fictional funeral care service built on top of the base components.
-```css
-.fc-c-card__content--centre {
-  text-align: center;
-}
-```
+### Webpack
+TBD

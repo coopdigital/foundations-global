@@ -1,0 +1,127 @@
+:root {
+  --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --type-base--body: 1rem;
+  --type-base--h-mega: 2.25rem;
+  --type-base--h1: 1.875rem;
+  --type-base--h2: 1.25rem;
+  --type-base--h3: 1.125rem;
+  --type-base--h4: 1.125rem;
+  --type-base--h5: 1.125rem;
+  --type-base--h6: 0.8125rem;
+  --type-base--blockquote: 1.25rem;
+  --type-base--lead: 1.25rem;
+  --type-base--small: 0.8125rem;
+  --type-base--line-height: 1.7;
+  --type-medium--body: 1.25rem;
+  --type-medium--h-mega: 3rem;
+  --type-medium--h1: 2.875rem;
+  --type-medium--h2: 1.625rem;
+  --type-medium--h3: 1.375rem;
+  --type-medium--h4: 1.375rem;
+  --type-medium--h5: 1.375rem;
+  --type-medium--h6: 1rem;
+  --type-medium--blockquote: 1.625rem;
+  --type-medium--lead: 1.625rem;
+  --type-medium--small: 1rem;
+  --type-medium--line-height: 1.6;
+  --spacing-base: 2rem;
+  --spacing-base--3-4: 1.5rem;
+  --spacing-base--3-4: calc(var(--spacing-base) / 4 * 3);
+  --spacing-base--1-2: 1rem;
+  --spacing-base--1-2: calc(var(--spacing-base) / 2);
+  --spacing-base--1-4: 0.5rem;
+  --spacing-base--1-4: calc(var(--spacing-base) / 4);
+  --spacing-base--1-8: 0.25rem;
+  --spacing-base--1-8: calc(var(--spacing-base) / 8);
+  --spacing-medium: 4rem;
+  --spacing-medium--3-4: 3rem;
+  --spacing-medium--3-4: calc(var(--spacing-medium) / 4 * 3);
+  --spacing-medium--1-2: 2rem;
+  --spacing-medium--1-2: calc(var(--spacing-medium) / 2);
+  --spacing-medium--1-4: 1rem;
+  --spacing-medium--1-4: calc(var(--spacing-medium) / 4);
+  --spacing-medium--1-8: 0.5rem;
+  --spacing-medium--1-8: calc(var(--spacing-medium) / 8);
+  --color-brand: #00b1e7;
+  --color-text: #282828;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-link: #00729a;
+  --color-link--hover: #000102;
+  --color-link--focus: #eec300;
+  --color-link--active: #005981;
+  --color-link--visited: #004c67;
+  --color-button-primary: #0f8482;
+  --color-button-primary--hover: #2b9e9c;
+  --color-button-primary--active: #0c6d6b;
+  --color-button-dark: #374c63;
+  --color-button-dark--hover: #4a6683;
+  --color-button-dark--active: #2e3f53;
+  --color-button: #374c63;
+  --color-button: var(--color-button-dark);
+  --color-button--hover: #4a6683;
+  --color-button--hover: var(--color-button-dark--hover);
+  --color-button--active: #2e3f53;
+  --color-button--active: var(--color-button-dark--active);
+  --color-grey-light: #f3f3f3;
+  --color-grey-mid: #c4c4c4;
+  --color-grey-dark: #6e6e6e;
+  --color-yellow-bright: #ff0;
+  --color-yellow-light: #ffec00;
+  --color-yellow-mid: #ffd308;
+  --color-green-bright: #edfb3c;
+  --color-green-light: #bad303;
+  --color-green-mid: #4f820d;
+  --color-green-dark: #385c0a;
+  --color-turquoise-bright: #0afbfb;
+  --color-turquoise-light: #72dcdb;
+  --color-turquoise-mid: #0f8482;
+  --color-turquoise-dark: #166d66;
+  --color-blue-bright: #418cfc;
+  --color-blue-light: #92d8fe;
+  --color-blue-mid: #326bb7;
+  --color-blue-dark: #334c89;
+  --color-pink-bright: #fc43d3;
+  --color-pink-light: #ff80d3;
+  --color-purple-mid: #ad208e;
+  --color-purple-dark: #61307d;
+  --color-orange-mid: #f8642c;
+  --color-red-mid: #d63118;
+  --color-red-dark: #9f2a00;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body,
+html {
+  font-size: 1rem;
+  font-size: var(--type-base--body);
+}
+@media var(min-width: 46.875em) {
+  body,
+  html {
+    font-size: 1.25rem;
+    font-size: var(--type-medium--body);
+  }
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #282828;
+  color: var(--color-text);
+  font-family: Avenir-Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  line-height: var(--type-base--line-height);
+}
+@media var(min-width: 46.875em) {
+  body {
+    line-height: 1.6;
+    line-height: var(--type-medium--line-height);
+  }
+} // Responsive images img{max-width:100%;height:auto;-ms-interpolation-mode:bicubic}.coop-logo-link{border:0}.coop-logo{height:40px;width:38px}
