@@ -1,10 +1,10 @@
 {
   "name": "@coopdigital/foundations-global",
-  "version": "1.0.1",
-  "description": "Co-op Foundations: Global",
+  "version": "1.0.2",
+  "description": "CSS Foundations: Global",
   "main": "dist/global.css",
   "style": "src/global.pcss",
-  "author": "Matthew Morek (matthew.morek@coopdigital.co.uk)",
+  "author": "Matthew Morek <matthew.morek@coopdigital.co.uk> (https://github.com/matthewmorek)",
   "license": "MIT",
   "files": [
     "dist",

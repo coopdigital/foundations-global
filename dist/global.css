@@ -99,7 +99,7 @@ html {
   font-size: 1rem;
   font-size: var(--type-base--body);
 }
-@media var(min-width: 46.875em) {
+@media (min-width: 46.875em) {
   body,
   html {
     font-size: 1.25rem;
@@ -119,9 +119,21 @@ body {
   line-height: 1.7;
   line-height: var(--type-base--line-height);
 }
-@media var(min-width: 46.875em) {
+@media (min-width: 46.875em) {
   body {
     line-height: 1.6;
     line-height: var(--type-medium--line-height);
   }
-} // Responsive images img{max-width:100%;height:auto;-ms-interpolation-mode:bicubic}.coop-logo-link{border:0}.coop-logo{height:40px;width:38px}
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+.coop-logo-link {
+  border: 0;
+}
+.coop-logo {
+  height: 40px;
+  width: 38px;
+}
