@@ -23,7 +23,7 @@
   --type-medium--blockquote: 1.625rem;
   --type-medium--lead: 1.625rem;
   --type-medium--small: 1rem;
-  --type-medium--line-height: 1.6;
+  --type-medium--base-line-height: 1.6;
   --spacing-base: 2rem;
   --spacing-base--3-4: 1.5rem;
   --spacing-base--3-4: calc(var(--spacing-base) / 4 * 3);
@@ -99,13 +99,6 @@ html {
   font-size: 1rem;
   font-size: var(--type-base--body);
 }
-@media (min-width: 46.875em) {
-  body,
-  html {
-    font-size: 1.25rem;
-    font-size: var(--type-medium--body);
-  }
-}
 body {
   position: relative;
   margin: 0;
@@ -118,12 +111,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
   line-height: var(--type-base--line-height);
-}
-@media (min-width: 46.875em) {
-  body {
-    line-height: 1.6;
-    line-height: var(--type-medium--line-height);
-  }
 }
 img {
   max-width: 100%;
